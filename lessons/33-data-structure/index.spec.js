@@ -71,5 +71,13 @@ describe('Base algorithms', () => {
       expect(workersTable.find('Alex')).toEqual( { name: 'Alex', age: 25 })
       expect(workersTable.find('Dan')).toEqual( { name: 'Dan', age: 29 })
     })
+    it("Should remove employee by name", () => {
+      workersTable.add({ name: "Alex", age: 25 });
+      workersTable.add({ name: "Dan", age: 29 });
+      workersTable.add({ name: "Dan123", age: 29 });
+      expect(workersTable.find("Dan123")).toBeDefined();
+      workersTable.removeByName("Dan123");
+      expect(workersTable.find("Dan123")).not.toBeDefined();
+    });
   })
 })
