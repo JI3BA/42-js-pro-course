@@ -1,0 +1,17 @@
+{
+  "name": "ji3ba-my-app",
+  "version": "1.1.0-beta",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JI3BA",
+  "license": "ISC",
+  "dependencies": {
+    "first-public-package": "^1.1.0-beta"
+  },
+  "devDependencies": {
+    "eslint": "^7.24.0"
+  }
+}
